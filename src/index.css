@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card {
+  min-width: 350px;
+  box-shadow: 5px 5px 7px #ccc;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 10px;
+}
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 20px;
+  text-align: center;
+}
+
+.ratAndCount {
+  font-size: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.img {
+  display: block;
+  margin: 5px auto;
+}
