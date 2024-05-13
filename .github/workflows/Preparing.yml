@@ -1,0 +1,12 @@
+name: Preparing for deploy
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v4
+      - name: Install depencies
+        run: npm ci
+      - name: Run tests
+        run: npm run test
