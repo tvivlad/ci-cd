@@ -10,3 +10,21 @@ jobs:
         run: npm ci
       - name: Run tests
         run: npm run test
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v4
+      - name: Install depencies
+        run: npm ci
+      - name: Run eslint
+        run: npm run test
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v4
+      - name: Install depencies
+        run: npm ci
+      - name: Run build
+        run: npm run build
